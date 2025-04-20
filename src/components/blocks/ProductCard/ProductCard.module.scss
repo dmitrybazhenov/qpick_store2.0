@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 22px;
+  border-radius: 30px;
+
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  box-shadow: var(--standart-drop-shadow);
+}
+
+.title {
+  font-size: 17px;
+  color: var(--dark-color);
+  font-weight: 600;
+  text-transform: capitalize;
+
+  // отступ для выравнивания если у элемента нет старой цены
+  margin-bottom: 16px;
+}
+
+.img {
+  align-self: center;
+  width: auto;
+  max-height: 240px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &:first-of-type {
+    margin-top: auto;
+  }
+}
+
+.button {
+  font-family: var(--main-font);
+  font-size: 17px;
+  color: var(--dark-color);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin-right: -10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--bg-hover-color);
+  }
+}

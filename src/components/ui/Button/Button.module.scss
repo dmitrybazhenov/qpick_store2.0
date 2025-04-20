@@ -1,0 +1,20 @@
+.button {
+  background-color: var(--dark-color);
+  color: white;
+  width: 100%;
+  padding: 22px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--main-font);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}

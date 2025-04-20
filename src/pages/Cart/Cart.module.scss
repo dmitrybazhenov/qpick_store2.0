@@ -1,0 +1,79 @@
+@import '/src/breakpoints.scss';
+
+.main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.twoColumnWrapper {
+  display: grid;
+  grid-template-columns: 4fr 1fr 2fr;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  list-style-type: none;
+}
+
+.total {
+  grid-column: -2/-1;
+  background-color: white;
+  border-radius: 30px 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--standart-drop-shadow);
+  max-height: 120px;
+}
+
+.totalTopPanel {
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalTitle {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.error {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: fit-content;
+}
+
+.errorLink {
+  text-decoration: none;
+}
+
+.errorTitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--light-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.products {
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+
+  flex-wrap: wrap;
+  gap: 30px;
+}
