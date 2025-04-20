@@ -1,3 +1,2 @@
 
-
-при запуске стандарно npm и http://localhost:4173/ 
+npm i http://localhost:4173/ 
